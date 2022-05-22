@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+section
+{
+  height: 100vh;
+  background: #000;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video{
+  object-fit: cover;
+}
+
+
+h1
+{
+  color: rgb(242, 242, 242);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  font-size: 5rem;
+  padding: 0;
+  margin: 0 auto;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+span
+{
+  display: inline-block;
+  animation: opacity-change 1s linear forwards;
+  opacity: 0;
+  padding: 0;
+  margin: 0 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+@keyframes opacity-change
+{
+  0%{
+    opacity: 0;
+    transform: rotateY(100deg);
+    filter: blur(4px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
+  }
+}
+
+span:nth-child(1)
+{
+  animation-delay: .8s;
+}
+span:nth-child(2)
+{
+  animation-delay: 1.5s;
+}
+span:nth-child(3)
+{
+  animation-delay: 2s;
+}
+span:nth-child(4)
+{
+  animation-delay: 2.5s;
+}
+span:nth-child(5)
+{
+  animation-delay: 3s;
+}
+span:nth-child(6)
+{
+  animation-delay: 3.5s;
+}
